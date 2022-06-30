@@ -4,6 +4,35 @@
   margin: 0;
   box-sizing: border-box;
 }
+.helloMessage {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background-color: rgba(0,0,0,0.7);
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: white;
+}
+.helloMessage label {
+	margin-bottom: 10px;
+}
+.helloMessage input {
+	padding: 10px 15px;
+	border-radius: 4px;
+}
+.helloMessage input[type="submit"] {
+  background-color: #e7e7e7;
+  color: red;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.helloMessage input:focus {
+	outline: none;
+}
 img{
   width: 75px;
   height: 75px;

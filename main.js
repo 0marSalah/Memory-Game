@@ -1,0 +1,9 @@
+// Make Hello Message
+let pop = document.querySelector(".helloMessage")
+let nameValue = document.querySelector(".helloMessage input[type=\"text\"]")
+let submitBtn = document.querySelector(".helloMessage input[type=\"submit\"]")
+let spn = document.querySelector(".name span")
+submitBtn.addEventListener("click", () => {
+  spn.textContent = nameValue.value
+  pop.style = "display:none"
+})
