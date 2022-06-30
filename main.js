@@ -7,3 +7,9 @@ submitBtn.addEventListener("click", () => {
   spn.textContent = nameValue.value
   pop.style = "display:none"
 })
+nameValue.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    spn.textContent = nameValue.value
+  pop.style = "display:none"
+  }
+})
