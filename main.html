@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="./all.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="name">
+      Hello: <span></span>
+    </div>
+    <div class="tries">
+      Wrong Tries: <span></span>
+    </div>
+  </header>
+  <section class="container-blocks">
+    <div class="block" nt="bird">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/bird.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="bird">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/bird.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="bracket">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/bracket.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="bracket">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/bracket.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="butter">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/butterFly.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="butter">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/butterFly.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="camera">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/camera.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="camera">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/camera.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="cat">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/cat.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="cat">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/cat.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="clock">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/clock.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="clock">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/clock.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="coffe">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/coffe.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="coffe">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/coffe.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="computer">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/computer.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="computer">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/computer.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="cow">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/cow.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="cow">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/cow.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="dog">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/dog.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="dog">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/dog.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="dog1">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/dog1.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="dog1">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/dog1.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="fire">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/fire.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="fire">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/fire.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="memory">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/memory.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="memory">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/memory.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="octopus">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/octopus.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="octopus">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/octopus.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="polar">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/polar.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="polar">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/polar.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="process">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/process.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="process">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/process.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="processorGreen">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/processorGreen.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="processorGreen">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/processorGreen.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="rocket">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/rocket.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="rocket">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/rocket.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="sheep">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/sheep.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="sheep">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/sheep.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="snke">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/snke.svg" alt="">
+      </div>
+    </div>
+    <div class="block" nt="snke">
+      <div class="face front">
+        <img src="./images/questionMark.svg" alt="">
+      </div>
+      <div class="face back">
+        <img src="./images/snke.svg" alt="">
+      </div>
+    </div>
+  </section>
+  <script src="./main.js"></script>
+</body>
+</html>

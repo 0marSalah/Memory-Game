@@ -1,0 +1,38 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img{
+  width: 75px;
+  height: 75px;
+}
+img:not(img[src="./images/questionMark.svg"]) {
+  opacity: 0;
+  position: absolute;
+}
+body {
+  margin: 10px auto;
+  width: 750px;
+}
+header {
+  padding: 15px 10px;
+  width: 100%;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  background-color: #777;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+header .tries {
+  width: 20%;
+}
+section {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
