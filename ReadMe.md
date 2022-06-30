@@ -1,2 +1,2 @@
 # Memory Game
-    - A game which tet your memory
+    - A game which test your memory
