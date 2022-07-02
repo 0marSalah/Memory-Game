@@ -4,10 +4,31 @@
   margin: 0;
   box-sizing: border-box;
 }
+#time-end {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0px;
+  width: 00vw;
+  height: 00vh;
+}
+body {
+  font-family: Arial, Tahoma, sans-serif;
+  background-color: #c23156;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
 .helloMessage {
 	width: 100vw;
 	height: 100vh;
-	position: absolute;
+	position: fixed;
 	background-color: rgba(0,0,0,0.7);
 	top: 0;
 	left: 0;
@@ -16,13 +37,20 @@
 	justify-content: center;
 	flex-direction: column;
 	color: white;
+  z-index: 999;
 }
 .helloMessage label {
-	margin-bottom: 10px;
+	margin-bottom: -1px;
+  background-color: #e3e3e3;
+  padding: 10px 15px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: #333;
 }
 .helloMessage input {
 	padding: 10px 15px;
-	border-radius: 4px;
+	border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 .helloMessage input[type="submit"] {
   background-color: #e7e7e7;
@@ -32,36 +60,117 @@
 }
 .helloMessage input:focus {
 	outline: none;
+  border: solid 2px #e3e3e3;
 }
-img{
-  width: 75px;
-  height: 75px;
-}
-img:not(img[src="./images/questionMark.svg"]) {
-  opacity: 0;
-  position: absolute;
-}
-body {
-  margin: 10px auto;
-  width: 750px;
-}
+/* ----------------------End Hello Message------------------------- */
 header {
-  padding: 15px 10px;
-  width: 100%;
+  padding: 25px 20px;
+  width: 750px;
   display: flex;
   color: white;
   justify-content: space-between;
   background-color: #777;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  margin: 20px auto;
+  font-size: 18px;
 }
 header .tries {
   width: 20%;
 }
+
+header {
+  padding: 5px 10px;
+  color: white;
+}
 section {
-  margin-top: 10px;
   display: flex;
+  width: 750px;
   flex-wrap: wrap;
-  gap: 10px;
-  justify-content: space-between;
+  /* margin: 20px auto; */
+}
+.block {
+  height: 70px;
+  transition: transform .5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  flex: 1 0 70px;
+  margin: 0 10px 20px;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+}
+.front {
+  /* background-color: #e7e7e7; */
+  border-radius: 50%;
+}
+.back {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  transform: rotateY(180deg);
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+.is-flipped,
+.has-match {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+.no-clicking {
+  pointer-events: none;
+}
+.leader-board {
+  width: 350px;
+  height: auto;
+  padding: 10px 25px;
+  color: #fff;
+  border: #333 solid 3px;
+  position: relative;
+  margin: 20px auto;
+}
+.leader-board h3 {
+  padding: 10px 20px;
+  text-align: center;
+  position: relative;
+}
+.leader-board h3::after {
+  content: "";
+  width: calc(100% + 40px);
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+}
+.leader-board .head {
+  padding: 10px 0 0 0;
+  display: flex;
+}
+.leader-board .head .name-head,
+.leader-board .head .wrong-head{
+  width: 50%;
+  text-align: center;
+}
+.leader-board .head .name-head h4,
+.leader-board .head .wrong-head h4 {
+  border-bottom: 3px solid #333;
+  padding: 10px 0;
+}
+.leader-board .head .name-head .person,
+.leader-board .head .wrong-head .value {
+  padding: 10px 15px;
+  border-bottom: 1px solid #333;
+  width: 150px;
 }
